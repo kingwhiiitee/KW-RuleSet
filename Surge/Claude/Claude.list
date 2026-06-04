@@ -1,6 +1,3 @@
-# Claude / Anthropic Rule Set
-# Compatible with Surge (ruleset) and Mihomo (rule-provider, behavior: classical, format: text)
-
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
