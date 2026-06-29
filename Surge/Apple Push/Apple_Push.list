@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,push.apple.com,DIRECT
+DOMAIN-SUFFIX,courier.push.apple.com,DIRECT
+IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
