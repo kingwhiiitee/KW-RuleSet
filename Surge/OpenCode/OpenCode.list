@@ -1,0 +1,17 @@
+# OpenCode 官方基础设施
+DOMAIN-SUFFIX,opencode.ai,PROXY
+DOMAIN-SUFFIX,opncd.ai,PROXY
+
+# Model Catalog：新 + 旧
+DOMAIN-SUFFIX,models.dev,PROXY
+
+# OpenCode 内置 Web Search
+DOMAIN,mcp.exa.ai,PROXY
+DOMAIN,search.parallel.ai,PROXY
+
+# GitHub / 更新 / Release
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+
+# Plugin / Provider SDK
+DOMAIN,registry.npmjs.org,PROXY
