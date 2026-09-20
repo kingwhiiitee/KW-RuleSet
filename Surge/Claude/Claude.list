@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN,claude.com
+DOMAIN,claude.ai
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic-com.ghost.io
