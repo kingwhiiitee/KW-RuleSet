@@ -1,0 +1,8 @@
+payload:
+    - DOMAIN-SUFFIX,paypay.ne.jp
+    - DOMAIN-SUFFIX,paypay.co.jp
+    - DOMAIN-SUFFIX,paypay-bank.co.jp
+    - DOMAIN-SUFFIX,paypay-card.co.jp
+    - DOMAIN-SUFFIX,paypay-sec.co.jp
+    - DOMAIN-SUFFIX,paypay-insurance.co.jp
+    - DOMAIN-SUFFIX,paycierge.com
