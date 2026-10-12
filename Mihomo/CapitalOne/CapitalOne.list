@@ -1,0 +1,27 @@
+payload:
+    # Capital One — verified 2026-10-12
+    # Sources: official US/Canada/UK sites and their linked services
+    # https://www.capitalone.com/
+    # https://www.capitalone.ca/
+    # https://www.capitalone.co.uk/
+    # Banking aliases redirect to https://www.capitalone.com/bank/
+    - DOMAIN-SUFFIX,capitalone.com
+    - DOMAIN-SUFFIX,capitalone.ca
+    - DOMAIN-SUFFIX,capitalone.co.uk
+    - DOMAIN-SUFFIX,capitalone360.com
+    - DOMAIN-SUFFIX,capitalonebank.com
+    - DOMAIN-SUFFIX,capitalonecareers.com
+    - DOMAIN-SUFFIX,capitalonecareers.ca
+    - DOMAIN-SUFFIX,capitaloneshopping.com
+    - DOMAIN-SUFFIX,capitalonetravel.com
+    # Additional service/infrastructure domains:
+    # https://www.netify.ai/resources/applications/capital-one
+    - DOMAIN-SUFFIX,capitalonegslbex.com
+    - DOMAIN-SUFFIX,capitaloneoffers.com
+    - DOMAIN-SUFFIX,ivaws.com
+
+    # Registered Capital One networks; not shared CDN/cloud provider ranges.
+    # https://rdap.arin.net/registry/ip/204.63.32.0/19
+    - IP-CIDR,204.63.32.0/19,no-resolve
+    # https://rdap.db.ripe.net/ip/217.169.160.0/20
+    - IP-CIDR,217.169.160.0/20,no-resolve
