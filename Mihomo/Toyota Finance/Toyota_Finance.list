@@ -1,4 +1,5 @@
 payload:
+    # Toyota Finance (Japan) — additions verified 2026-10-13
     - DOMAIN-SUFFIX,toyota-finance.co.jp
     - DOMAIN-SUFFIX,tscubic.com
     - DOMAIN-SUFFIX,ts3card.com
@@ -7,3 +8,36 @@ payload:
     - DOMAIN-SUFFIX,id.toyota
     - DOMAIN-SUFFIX,toyota.jp
     - DOMAIN-SUFFIX,kinto-jp.com
+
+    # Official linked services: Lexus card, merchants, points, travel and shopping.
+    # https://www.toyota-finance.co.jp/
+    # https://tscubic.com/
+    # https://tscubic.com/related-service/
+    - DOMAIN-SUFFIX,lexus-fs.jp
+    - DOMAIN-SUFFIX,ts3card-memberstore.jp
+    - DOMAIN-SUFFIX,ts3pum.com
+    - DOMAIN-SUFFIX,tscubic-travel.com
+    - DOMAIN-SUFFIX,tscubic-shopping.com
+
+    # Wallet identity-document upload; match only the Toyota-specific host.
+    # https://faq.toyota-wallet.com/faq/show/321?site_domain=default
+    - DOMAIN,toyotawallet.dpost-k.jp
+
+    # JPNIC assignments to TOYOTA FINANCE CORPORATION, not provider/CDN ranges.
+    # FINANCE-WEB1 includes www.toyota-finance.co.jp and service.ts3card.com.
+    # https://jpnic.rdap.apnic.net/ip/14.192.44.96/28
+    - IP-CIDR,14.192.44.96/28,no-resolve
+    # FINANCE-WEB2: https://jpnic.rdap.apnic.net/ip/112.137.56.104/29
+    - IP-CIDR,112.137.56.104/29,no-resolve
+    # TFC-NET: https://jpnic.rdap.apnic.net/ip/119.15.33.64/27
+    - IP-CIDR,119.15.33.64/27,no-resolve
+    # FINANCE-NET: https://jpnic.rdap.apnic.net/ip/119.15.46.0/25
+    - IP-CIDR,119.15.46.0/25,no-resolve
+    # FINANCE-NET1: https://jpnic.rdap.apnic.net/ip/203.149.103.0/25
+    - IP-CIDR,203.149.103.0/25,no-resolve
+    # KINKYU-MUCOH: https://jpnic.rdap.apnic.net/ip/210.251.101.80/29
+    - IP-CIDR,210.251.101.80/29,no-resolve
+    # TFC-ASTRUX: https://jpnic.rdap.apnic.net/ip/211.1.234.72/29
+    - IP-CIDR,211.1.234.72/29,no-resolve
+    # TFC-NET-IJI: https://jpnic.rdap.apnic.net/ip/219.99.156.224/28
+    - IP-CIDR,219.99.156.224/28,no-resolve
