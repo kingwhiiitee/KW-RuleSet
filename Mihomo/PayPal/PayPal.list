@@ -1,0 +1,43 @@
+payload:
+    # PayPal — verified 2026-10-14
+    # Core site, API, checkout, static assets and PayPal.Me payment links.
+    # https://www.paypal.com/us/home
+    # https://www.paypal.com/us/cshelp/article/what-is-paypalme-help432
+    - DOMAIN-SUFFIX,paypal.com
+    - DOMAIN-SUFFIX,paypalobjects.com
+    - DOMAIN-SUFFIX,paypal.me
+
+    # China site and official redirect alias.
+    # https://www.paypal.com/c2/home
+    # https://www.paypal.cn/
+    # https://www.paypal.com.cn/
+    - DOMAIN-SUFFIX,paypal.cn
+    - DOMAIN-SUFFIX,paypal.com.cn
+
+    # Official linked AI, corporate/investor/news and community sites.
+    # https://www.paypal.com/us/home
+    # https://developer.paypal.com/api/nvp-soap/payflow/gs-payflow/
+    - DOMAIN-SUFFIX,paypal.ai
+    - DOMAIN-SUFFIX,pypl.com
+    - DOMAIN-SUFFIX,paypal-corp.com
+    - DOMAIN-SUFFIX,paypal-community.com
+
+    # Official Live/Sandbox endpoint ranges, cross-checked against ARIN/RIPE RDAP.
+    # https://www.paypal.com/us/cshelp/article/what-are-the-internet-protocol-ip-addresses-for-paypal-server-endpoints-ts1056
+    # Prefer domain matching; these routing fallbacks are not a firewall allowlist.
+    # Shared CDN/cloud IPv4 and IPv6 addresses are intentionally excluded.
+    # https://rdap.arin.net/registry/ip/64.4.240.0
+    - IP-CIDR,64.4.240.0/21,no-resolve
+    - IP-CIDR,64.4.248.0/22,no-resolve
+    # https://rdap.arin.net/registry/ip/66.211.168.0
+    - IP-CIDR,66.211.168.0/22,no-resolve
+    # https://rdap.db.ripe.net/ip/91.243.72.0/23
+    - IP-CIDR,91.243.72.0/23,no-resolve
+    # https://rdap.arin.net/registry/ip/173.0.80.0
+    - IP-CIDR,173.0.80.0/20,no-resolve
+    # https://rdap.db.ripe.net/ip/185.177.52.0/22
+    - IP-CIDR,185.177.52.0/22,no-resolve
+    # https://rdap.arin.net/registry/ip/192.160.215.0
+    - IP-CIDR,192.160.215.0/24,no-resolve
+    # https://rdap.arin.net/registry/ip/198.54.216.0
+    - IP-CIDR,198.54.216.0/23,no-resolve
