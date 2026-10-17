@@ -1,0 +1,14 @@
+payload:
+    # Dia Browser — verified 2026-10-17
+    # Website, downloads/updates, status and support.
+    # https://www.diabrowser.com/
+    - DOMAIN-SUFFIX,diabrowser.com
+
+    # Account and AI backends, including account and ai-service subdomains.
+    # https://github.com/v2fly/domain-list-community/pull/3321
+    # https://rdap.identitydigital.services/rdap/domain/diabrowser.engineering
+    - DOMAIN-SUFFIX,diabrowser.engineering
+
+    # No IP rules: observed addresses belong to shared Cloudflare/Vercel networks.
+    # Third-party login/feature-flag services keep their own routing policies.
+    # This list does not proxy arbitrary websites opened in Dia.
