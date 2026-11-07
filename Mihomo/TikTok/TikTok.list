@@ -1,7 +1,7 @@
 payload:
     # TikTok — verified 2026-11-07
     # TikTok-only names from the TikTok-Unlock list. snssdk.com stays in Douyin.
-    # sg, jp, and us edges of the shared CDNs are listed here. cn edges stay in Douyin.list.
+    # Shared-CDN region token is the last hyphen segment: sg, va, alisg, useast1a, useast2a, useast5, useast8.
     # https://github.com/Semporia/TikTok-Unlock/blob/master/Surge/TikTok.list
     - DOMAIN,p16-tiktokcdn-com.akamaized.net
     - DOMAIN-SUFFIX,byteoversea.com
@@ -15,15 +15,27 @@ payload:
     - DOMAIN-KEYWORD,-tiktokcdn-com
     - DOMAIN-KEYWORD,-tiktok-
 
-    # sg / jp / us edges of the shared CDNs
-    - DOMAIN-SUFFIX,sg.ibyteimg.com
-    - DOMAIN-SUFFIX,jp.ibyteimg.com
-    - DOMAIN-SUFFIX,us.ibyteimg.com
-    - DOMAIN-SUFFIX,sg.ibytedtos.com
-    - DOMAIN-SUFFIX,jp.ibytedtos.com
-    - DOMAIN-SUFFIX,us.ibytedtos.com
-    - DOMAIN-SUFFIX,sg.ipstatp.com
-    - DOMAIN-SUFFIX,jp.ipstatp.com
-    - DOMAIN-SUFFIX,us.ipstatp.com
+    # p16-sign-sg.ibyteimg.com and the same tokens on ibytedtos.com / ipstatp.com
+    - DOMAIN-WILDCARD,*-alisg.ibyteimg.com
+    - DOMAIN-WILDCARD,*-sg.ibyteimg.com
+    - DOMAIN-WILDCARD,*-useast1a.ibyteimg.com
+    - DOMAIN-WILDCARD,*-useast2a.ibyteimg.com
+    - DOMAIN-WILDCARD,*-useast5.ibyteimg.com
+    - DOMAIN-WILDCARD,*-useast8.ibyteimg.com
+    - DOMAIN-WILDCARD,*-va.ibyteimg.com
+    - DOMAIN-WILDCARD,*-alisg.ibytedtos.com
+    - DOMAIN-WILDCARD,*-sg.ibytedtos.com
+    - DOMAIN-WILDCARD,*-useast1a.ibytedtos.com
+    - DOMAIN-WILDCARD,*-useast2a.ibytedtos.com
+    - DOMAIN-WILDCARD,*-useast5.ibytedtos.com
+    - DOMAIN-WILDCARD,*-useast8.ibytedtos.com
+    - DOMAIN-WILDCARD,*-va.ibytedtos.com
+    - DOMAIN-WILDCARD,*-alisg.ipstatp.com
+    - DOMAIN-WILDCARD,*-sg.ipstatp.com
+    - DOMAIN-WILDCARD,*-useast1a.ipstatp.com
+    - DOMAIN-WILDCARD,*-useast2a.ipstatp.com
+    - DOMAIN-WILDCARD,*-useast5.ipstatp.com
+    - DOMAIN-WILDCARD,*-useast8.ipstatp.com
+    - DOMAIN-WILDCARD,*-va.ipstatp.com
 
     - USER-AGENT,TikTok*
