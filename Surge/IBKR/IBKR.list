@@ -1,0 +1,59 @@
+# Interactive Brokers — verified 2026-11-07
+# Regional public sites named by IBKR.
+# https://www.clientam.com.hk/en/general/about/mediaRelations/7-21-23.php
+# Japan entity site named in the IB LLC financial-products notice.
+# https://gdcdyn.interactivebrokers.com/Universal/servlet/Registration_v2.formSampleView?formdb=3356
+# Hong Kong and Singapore names are on the IBG LLC certificate.
+DOMAIN-SUFFIX,interactivebrokers.ca
+DOMAIN-SUFFIX,interactivebrokers.co.in
+DOMAIN-SUFFIX,interactivebrokers.co.jp
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,interactivebrokers.com.au
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+DOMAIN-SUFFIX,interactivebrokers.com.sg
+DOMAIN-SUFFIX,interactivebrokers.hk
+DOMAIN-SUFFIX,interactivebrokers.hu
+DOMAIN-SUFFIX,interactivebrokers.ie
+DOMAIN-SUFFIX,interactivebrokers.sg
+
+# Client portal. clientam.com redirects into the official account site.
+# https://www.clientam.com/
+# https://www.clientam.com.hk/en/handysolutions/home.php
+DOMAIN-SUFFIX,clientam.com
+DOMAIN-SUFFIX,clientam.com.hk
+
+# Short domain and Web API. https://ibkr.com/ redirects to the main site.
+# api.ibkr.com is the documented Web API host.
+# https://www.interactivebrokers.com/docs/web-api/authentication/oauth-1a/introduction
+# The IBG LLC certificate also covers the Hong Kong and Singapore short names.
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.com.hk
+DOMAIN-SUFFIX,ibkr.com.sg
+DOMAIN-SUFFIX,ibkr.sg
+
+# China site. Its nameservers include dns2.ibkr.com.cn.
+# The resolved addresses are inside a shared hosting range and are not listed.
+DOMAIN-SUFFIX,ibkr.com.cn
+
+# TWS and IB Gateway. Nameservers are ndns/cdns.interactivebrokers.com.
+# ndc1.ibllc.com is inside the IBL-40 block below.
+# China gateway host: mcgw1.ibllc.com.cn
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,ibllc.com.cn
+
+# Networks registered to Interactive Brokers, or to Timber Hill (Europe) AG
+# at the IBKR Financial Services AG address in Zug.
+# Prefer domain matching. Shared CDN, cloud, and carrier ranges are excluded.
+# https://rdap.arin.net/registry/ip/8.37.184.0
+IP-CIDR,8.37.184.0/24,no-resolve
+# https://rdap.arin.net/registry/ip/63.86.206.0
+IP-CIDR,63.86.206.0/24,no-resolve
+# https://rdap.arin.net/registry/ip/64.190.192.0
+IP-CIDR,64.190.192.0/21,no-resolve
+# https://rdap.arin.net/registry/ip/170.55.22.48
+IP-CIDR,170.55.22.48/28,no-resolve
+# https://rdap.apnic.net/ip/103.38.90.0
+IP-CIDR,103.38.90.0/23,no-resolve
+# https://rdap.db.ripe.net/ip/217.192.86.0/24
+IP-CIDR,217.192.86.0/24,no-resolve
