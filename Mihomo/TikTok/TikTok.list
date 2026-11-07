@@ -1,41 +1,31 @@
 payload:
     # TikTok — verified 2026-11-07
-    # TikTok-only names from the TikTok-Unlock list. snssdk.com stays in Douyin.
-    # Shared-CDN region token is the last hyphen segment: sg, va, alisg, useast1a, useast2a, useast5, useast8.
+    # Whole-domain suffixes. snssdk.com stays in Douyin.
     # https://github.com/Semporia/TikTok-Unlock/blob/master/Surge/TikTok.list
     - DOMAIN,p16-tiktokcdn-com.akamaized.net
+    - DOMAIN-SUFFIX,byteintl.com
+    - DOMAIN-SUFFIX,byteintlapi.com
     - DOMAIN-SUFFIX,byteoversea.com
+    - DOMAIN-SUFFIX,byteoversea.net
+    - DOMAIN-SUFFIX,ibytedtos.com
+    - DOMAIN-SUFFIX,ibyteimg.com
+    - DOMAIN-SUFFIX,ipstatp.com
+    - DOMAIN-SUFFIX,isnssdk.com
     - DOMAIN-SUFFIX,muscdn.com
     - DOMAIN-SUFFIX,musical.ly
+    - DOMAIN-SUFFIX,sgsnssdk.com
     - DOMAIN-SUFFIX,sgpstatp.com
     - DOMAIN-SUFFIX,tik-tokapi.com
     - DOMAIN-SUFFIX,tiktok.com
+    - DOMAIN-SUFFIX,tiktokcdn-eu.com
+    - DOMAIN-SUFFIX,tiktokcdn-us.com
     - DOMAIN-SUFFIX,tiktokcdn.com
+    - DOMAIN-SUFFIX,tiktokshop.com
     - DOMAIN-SUFFIX,tiktokv.com
+    - DOMAIN-SUFFIX,tiktokv.eu
+    - DOMAIN-SUFFIX,tiktokv.us
+    - DOMAIN-SUFFIX,tiktokw.us
+    - DOMAIN-SUFFIX,ttwstatic.com
     - DOMAIN-KEYWORD,-tiktokcdn-com
     - DOMAIN-KEYWORD,-tiktok-
-
-    # p16-sign-sg.ibyteimg.com and the same tokens on ibytedtos.com / ipstatp.com
-    - DOMAIN-WILDCARD,*-alisg.ibyteimg.com
-    - DOMAIN-WILDCARD,*-sg.ibyteimg.com
-    - DOMAIN-WILDCARD,*-useast1a.ibyteimg.com
-    - DOMAIN-WILDCARD,*-useast2a.ibyteimg.com
-    - DOMAIN-WILDCARD,*-useast5.ibyteimg.com
-    - DOMAIN-WILDCARD,*-useast8.ibyteimg.com
-    - DOMAIN-WILDCARD,*-va.ibyteimg.com
-    - DOMAIN-WILDCARD,*-alisg.ibytedtos.com
-    - DOMAIN-WILDCARD,*-sg.ibytedtos.com
-    - DOMAIN-WILDCARD,*-useast1a.ibytedtos.com
-    - DOMAIN-WILDCARD,*-useast2a.ibytedtos.com
-    - DOMAIN-WILDCARD,*-useast5.ibytedtos.com
-    - DOMAIN-WILDCARD,*-useast8.ibytedtos.com
-    - DOMAIN-WILDCARD,*-va.ibytedtos.com
-    - DOMAIN-WILDCARD,*-alisg.ipstatp.com
-    - DOMAIN-WILDCARD,*-sg.ipstatp.com
-    - DOMAIN-WILDCARD,*-useast1a.ipstatp.com
-    - DOMAIN-WILDCARD,*-useast2a.ipstatp.com
-    - DOMAIN-WILDCARD,*-useast5.ipstatp.com
-    - DOMAIN-WILDCARD,*-useast8.ipstatp.com
-    - DOMAIN-WILDCARD,*-va.ipstatp.com
-
     - USER-AGENT,TikTok*

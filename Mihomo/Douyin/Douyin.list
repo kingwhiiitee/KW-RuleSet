@@ -1,9 +1,9 @@
 payload:
     # Douyin — verified 2026-11-07
     # Douyin, Douyin Huoshan, and the domains v2fly keeps in its douyin list.
-    # TikTok-only names (tiktok.com, musical.ly, byteoversea.com, muscdn.com,
-    # sgpstatp.com) are omitted. ibyteimg.com and ibytedtos.com have no cn label;
-    # their region tokens are in TikTok.list.
+    # TikTok-only names (tiktok.com, musical.ly, byteoversea.com, ibyteimg.com,
+    # ibytedtos.com, ipstatp.com, isnssdk.com, sgsnssdk.com) are in TikTok.list.
+    # snssdk.com stays here. pstatp.com does not match ipstatp.com.
     # https://github.com/v2fly/domain-list-community/blob/master/data/douyin
     # https://www.douyin.com/
     - DOMAIN-SUFFIX,activity-wbsj.com
