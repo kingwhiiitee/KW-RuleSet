@@ -2,8 +2,8 @@ payload:
     # Douyin — verified 2026-11-07
     # Douyin, Douyin Huoshan, and the domains v2fly keeps in its douyin list.
     # TikTok-only names (tiktok.com, musical.ly, byteoversea.com, muscdn.com,
-    # sgpstatp.com) are omitted. ibyteimg.com, ibytedtos.com, and ipstatp.com are
-    # shared with TikTok; this list wins, so they stay with Douyin.
+    # sgpstatp.com) are omitted. Overseas edges of ibyteimg.com, ibytedtos.com,
+    # and ipstatp.com are DOMAIN-KEYWORD lines in TikTok.list.
     # https://github.com/v2fly/domain-list-community/blob/master/data/douyin
     # https://www.douyin.com/
     - DOMAIN-SUFFIX,activity-wbsj.com
@@ -78,8 +78,8 @@ payload:
     - DOMAIN-SUFFIX,woaihuoshan.com
     - DOMAIN-SUFFIX,wohst8.com
 
-    # Domestic hosts used by Douyin. Shared names are also in the TikTok-Unlock list;
-    # keep this ruleset above that one so they stay with Douyin.
+    # Domestic fallback for the shared CDNs. TikTok.list is placed above this
+    # ruleset and takes the overseas prefixes first.
     # pstatp.com does not match ipstatp.com or sgpstatp.com.
     # https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DouYin/DouYin.list
     - DOMAIN-SUFFIX,bytednsdoc.com
