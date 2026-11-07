@@ -1,8 +1,8 @@
 # Douyin — verified 2026-11-07
 # Douyin, Douyin Huoshan, and the domains v2fly keeps in its douyin list.
 # TikTok-only names (tiktok.com, musical.ly, byteoversea.com, muscdn.com,
-# sgpstatp.com) are omitted. Overseas edges of ibyteimg.com, ibytedtos.com,
-# and ipstatp.com are DOMAIN-KEYWORD lines in TikTok.list.
+# sgpstatp.com) are omitted. cn edges of the shared CDNs are listed here.
+# sg, jp, and us edges are DOMAIN-SUFFIX lines in TikTok.list.
 # https://github.com/v2fly/domain-list-community/blob/master/data/douyin
 # https://www.douyin.com/
 DOMAIN-SUFFIX,activity-wbsj.com
@@ -77,14 +77,12 @@ DOMAIN-SUFFIX,ultracachenode.com
 DOMAIN-SUFFIX,woaihuoshan.com
 DOMAIN-SUFFIX,wohst8.com
 
-# Domestic fallback for the shared CDNs. TikTok.list is placed above this
-# ruleset and takes the overseas prefixes first.
-# pstatp.com does not match ipstatp.com or sgpstatp.com.
+# cn edges of the shared CDNs. pstatp.com does not match ipstatp.com.
 # https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DouYin/DouYin.list
 DOMAIN-SUFFIX,bytednsdoc.com
-DOMAIN-SUFFIX,ibytedtos.com
-DOMAIN-SUFFIX,ibyteimg.com
-DOMAIN-SUFFIX,ipstatp.com
+DOMAIN-SUFFIX,cn.ibytedtos.com
+DOMAIN-SUFFIX,cn.ibyteimg.com
+DOMAIN-SUFFIX,cn.ipstatp.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,zjcdn.com

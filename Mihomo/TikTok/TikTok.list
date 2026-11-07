@@ -1,8 +1,7 @@
 payload:
     # TikTok — verified 2026-11-07
     # TikTok-only names from the TikTok-Unlock list. snssdk.com stays in Douyin.
-    # Overseas edges of the shared CDNs are listed here by prefix. Domestic names
-    # on those suffixes stay in Douyin.list, which is placed after this ruleset.
+    # sg, jp, and us edges of the shared CDNs are listed here. cn edges stay in Douyin.list.
     # https://github.com/Semporia/TikTok-Unlock/blob/master/Surge/TikTok.list
     - DOMAIN,p16-tiktokcdn-com.akamaized.net
     - DOMAIN-SUFFIX,byteoversea.com
@@ -16,34 +15,15 @@ payload:
     - DOMAIN-KEYWORD,-tiktokcdn-com
     - DOMAIN-KEYWORD,-tiktok-
 
-    # ibyteimg.com overseas prefixes
-    - DOMAIN-KEYWORD,-alisg.ibyteimg.com
-    - DOMAIN-KEYWORD,-euttp.ibyteimg.com
-    - DOMAIN-KEYWORD,-maliva.ibyteimg.com
-    - DOMAIN-KEYWORD,-sg.ibyteimg.com
-    - DOMAIN-KEYWORD,-va.ibyteimg.com
-    - DOMAIN-KEYWORD,useast2a.ibyteimg.com
-    - DOMAIN-KEYWORD,useast5.ibyteimg.com
-    - DOMAIN-KEYWORD,useast8.ibyteimg.com
-
-    # ibytedtos.com overseas prefixes
-    - DOMAIN-KEYWORD,-alisg.ibytedtos.com
-    - DOMAIN-KEYWORD,-euttp.ibytedtos.com
-    - DOMAIN-KEYWORD,-maliva.ibytedtos.com
-    - DOMAIN-KEYWORD,-sg.ibytedtos.com
-    - DOMAIN-KEYWORD,-va.ibytedtos.com
-    - DOMAIN-KEYWORD,useast2a.ibytedtos.com
-    - DOMAIN-KEYWORD,useast5.ibytedtos.com
-    - DOMAIN-KEYWORD,useast8.ibytedtos.com
-
-    # ipstatp.com overseas prefixes
-    - DOMAIN-KEYWORD,-alisg.ipstatp.com
-    - DOMAIN-KEYWORD,-euttp.ipstatp.com
-    - DOMAIN-KEYWORD,-maliva.ipstatp.com
-    - DOMAIN-KEYWORD,-sg.ipstatp.com
-    - DOMAIN-KEYWORD,-va.ipstatp.com
-    - DOMAIN-KEYWORD,useast2a.ipstatp.com
-    - DOMAIN-KEYWORD,useast5.ipstatp.com
-    - DOMAIN-KEYWORD,useast8.ipstatp.com
+    # sg / jp / us edges of the shared CDNs
+    - DOMAIN-SUFFIX,sg.ibyteimg.com
+    - DOMAIN-SUFFIX,jp.ibyteimg.com
+    - DOMAIN-SUFFIX,us.ibyteimg.com
+    - DOMAIN-SUFFIX,sg.ibytedtos.com
+    - DOMAIN-SUFFIX,jp.ibytedtos.com
+    - DOMAIN-SUFFIX,us.ibytedtos.com
+    - DOMAIN-SUFFIX,sg.ipstatp.com
+    - DOMAIN-SUFFIX,jp.ipstatp.com
+    - DOMAIN-SUFFIX,us.ipstatp.com
 
     - USER-AGENT,TikTok*
