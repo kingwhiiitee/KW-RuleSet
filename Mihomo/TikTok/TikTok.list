@@ -28,4 +28,7 @@ payload:
     - DOMAIN-SUFFIX,ttwstatic.com
     - DOMAIN-KEYWORD,-tiktokcdn-com
     - DOMAIN-KEYWORD,-tiktok-
+    - DOMAIN-WILDCARD,*-tt.byteimg.com
+    - DOMAIN-WILDCARD,*-tt-*.byteimg.com
+    - DOMAIN-WILDCARD,*-mus.pstatp.com
     - USER-AGENT,TikTok*
