@@ -1,7 +1,8 @@
 # Douyin — verified 2026-11-07
 # Douyin, Douyin Huoshan, and the domains v2fly keeps in its douyin list.
-# TikTok-only names (tiktok.com, musical.ly, byteoversea.com, ibyteimg.com,
-# ibytedtos.com, ipstatp.com, muscdn.com, sgpstatp.com) are omitted.
+# TikTok-only names (tiktok.com, musical.ly, byteoversea.com, muscdn.com,
+# sgpstatp.com) are omitted. ibyteimg.com, ibytedtos.com, and ipstatp.com are
+# shared with TikTok; this list wins, so they stay with Douyin.
 # https://github.com/v2fly/domain-list-community/blob/master/data/douyin
 # https://www.douyin.com/
 DOMAIN-SUFFIX,activity-wbsj.com
@@ -76,11 +77,14 @@ DOMAIN-SUFFIX,ultracachenode.com
 DOMAIN-SUFFIX,woaihuoshan.com
 DOMAIN-SUFFIX,wohst8.com
 
-# Domestic hosts used by Douyin. snssdk.com is also in the TikTok-Unlock list;
-# keep this ruleset above that one so the shared name stays with Douyin.
+# Domestic hosts used by Douyin. Shared names are also in the TikTok-Unlock list;
+# keep this ruleset above that one so they stay with Douyin.
 # pstatp.com does not match ipstatp.com or sgpstatp.com.
 # https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DouYin/DouYin.list
 DOMAIN-SUFFIX,bytednsdoc.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,ibyteimg.com
+DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,zjcdn.com
