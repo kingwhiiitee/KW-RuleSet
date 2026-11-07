@@ -1,0 +1,26 @@
+payload:
+    # Charles Schwab — verified 2026-11-07
+    # Brokerage, bank, advisor, workplace plan, alliance, charitable, and CDN domains.
+    # Nameservers are np1–np4.schwab.com.
+    # https://www.schwab.com/
+    # https://www.schwab.com.hk/
+    - DOMAIN-SUFFIX,charlesschwab.com
+    - DOMAIN-SUFFIX,schwab.com
+    - DOMAIN-SUFFIX,schwab.com.hk
+    - DOMAIN-SUFFIX,schwaballiance.com
+    - DOMAIN-SUFFIX,schwabbank.com
+    - DOMAIN-SUFFIX,schwabcdn.com
+    - DOMAIN-SUFFIX,schwabcharitable.org
+    - DOMAIN-SUFFIX,schwabinstitutional.com
+    - DOMAIN-SUFFIX,schwabplan.com
+
+    # TD Ameritrade and thinkorswim, now operated by Schwab.
+    # Their nameservers are also np1–np4.schwab.com.
+    # https://www.schwab.com/welcome-to-schwab
+    - DOMAIN-SUFFIX,ameritrade.com
+    - DOMAIN-SUFFIX,tdameritrade.com
+    - DOMAIN-SUFFIX,tdameritrade.com.hk
+    - DOMAIN-SUFFIX,thinkorswim.com
+    - DOMAIN-SUFFIX,tos.mx
+
+    # Public sites are served by Akamai. No Schwab-registered prefix is listed.
