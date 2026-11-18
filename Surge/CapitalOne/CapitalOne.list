@@ -1,4 +1,4 @@
-# Capital One — verified 2026-10-12
+# Capital One — verified 2026-11-18
 # Sources: official US/Canada/UK sites and their linked services
 # https://www.capitalone.com/
 # https://www.capitalone.ca/
@@ -18,6 +18,14 @@ DOMAIN-SUFFIX,capitalonetravel.com
 DOMAIN-SUFFIX,capitalonegslbex.com
 DOMAIN-SUFFIX,capitaloneoffers.com
 DOMAIN-SUFFIX,ivaws.com
+
+# Telemetry: Adobe stack verified via first-party CNAMEs.
+# metrics./smetrics.capitalone.com -> capitalone.com.(ssl.)d1.sc.omtrdc.net
+# capitalone.demdex.net -> gslb-2.demdex.net
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN-SUFFIX,adobedc.net
 
 # Registered Capital One networks; not shared CDN/cloud provider ranges.
 # https://rdap.arin.net/registry/ip/204.63.32.0/19

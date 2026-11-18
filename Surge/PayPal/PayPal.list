@@ -1,4 +1,4 @@
-# PayPal — verified 2026-10-14
+# PayPal — verified 2026-11-18
 # Core site, API, checkout, static assets and PayPal.Me payment links.
 # https://www.paypal.com/us/home
 # https://www.paypal.com/us/cshelp/article/what-is-paypalme-help432
@@ -20,6 +20,28 @@ DOMAIN-SUFFIX,paypal.ai
 DOMAIN-SUFFIX,pypl.com
 DOMAIN-SUFFIX,paypal-corp.com
 DOMAIN-SUFFIX,paypal-community.com
+
+# PayPal-owned products: Braintree, Venmo, Xoom, Hyperwallet,
+# Zettle, Honey and Paidy.
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,braintree.tools
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-SUFFIX,xoom.com
+DOMAIN-SUFFIX,hyperwallet.com
+DOMAIN-SUFFIX,izettle.com
+DOMAIN-SUFFIX,joinhoney.com
+DOMAIN-SUFFIX,paidy.net
+
+# Telemetry, surveys and checkout fraud checks.
+# data.adobedc.net observed on paypal.com (Adobe AEP Web SDK);
+# mpsnare.iesnare.com is the iovation device-fingerprint beacon.
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN-SUFFIX,adobedc.net
+DOMAIN-SUFFIX,iesnare.com
+DOMAIN-SUFFIX,qualtrics.com
 
 # Official Live/Sandbox endpoint ranges, cross-checked against ARIN/RIPE RDAP.
 # https://www.paypal.com/us/cshelp/article/what-are-the-internet-protocol-ip-addresses-for-paypal-server-endpoints-ts1056

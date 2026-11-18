@@ -1,4 +1,4 @@
-# Toyota Finance (Japan) — additions verified 2026-10-13
+# Toyota Finance (Japan) — additions verified 2026-11-18
 DOMAIN-SUFFIX,toyota-finance.co.jp
 DOMAIN-SUFFIX,tscubic.com
 DOMAIN-SUFFIX,ts3card.com
@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,tscubic-shopping.com
 # Wallet identity-document upload; match only the Toyota-specific host.
 # https://faq.toyota-wallet.com/faq/show/321?site_domain=default
 DOMAIN,toyotawallet.dpost-k.jp
+# faq.toyota-wallet.com CNAMEs to the OKBiz FAQ host.
+DOMAIN,toyota-wallet.okbiz.jp
 
 # JPNIC assignments to TOYOTA FINANCE CORPORATION, not provider/CDN ranges.
 # FINANCE-WEB1 includes www.toyota-finance.co.jp and service.ts3card.com.
