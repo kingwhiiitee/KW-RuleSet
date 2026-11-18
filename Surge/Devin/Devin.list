@@ -1,0 +1,30 @@
+# Devin (Cognition) — verified 2026-11-18
+# Docs: https://docs.devin.ai/enterprise/deployment/overview
+#
+# codeium.com hosts the Devin CLI API server (server.codeium.com); every
+# CLI RPC goes there, and the model catalog is region-gated by egress IP.
+# devinapps.com serves the IDE/Desktop session tools (required per docs).
+# cognition.ai is the parent company domain.
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,cognition.ai
+DOMAIN-SUFFIX,devin.ai
+DOMAIN-SUFFIX,devinapps.com
+
+# Resolved via DoH 2026-11-18.
+# api.devin.ai + *.devinapps.com: AWS us-west-2
+# app.devin.ai: CloudFront
+# devin.ai / cognition.ai / devinapps.com apex: Vercel (76.76.21.21)
+IP-CIDR,13.33.183.67/32,no-resolve
+IP-CIDR,13.33.183.69/32,no-resolve
+IP-CIDR,13.33.183.113/32,no-resolve
+IP-CIDR,13.33.183.115/32,no-resolve
+IP-CIDR,32.184.175.188/32,no-resolve
+IP-CIDR,34.212.162.46/32,no-resolve
+IP-CIDR,35.155.100.167/32,no-resolve
+IP-CIDR,35.164.120.78/32,no-resolve
+IP-CIDR,44.224.177.170/32,no-resolve
+IP-CIDR,44.234.212.1/32,no-resolve
+IP-CIDR,44.239.24.221/32,no-resolve
+IP-CIDR,52.33.192.41/32,no-resolve
+IP-CIDR,54.244.156.109/32,no-resolve
+IP-CIDR,76.76.21.21/32,no-resolve
