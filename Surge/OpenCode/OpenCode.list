@@ -9,9 +9,8 @@ DOMAIN-SUFFIX,models.dev,PROXY
 DOMAIN,mcp.exa.ai,PROXY
 DOMAIN,search.parallel.ai,PROXY
 
-# GitHub / 更新 / Release
-DOMAIN-SUFFIX,github.com,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
+# GitHub traffic intentionally not listed: it belongs to GitHub.list's
+# policy, not OpenCode's. OpenCode installs/releases still work through it.
 
 # Plugin / Provider SDK
 DOMAIN,registry.npmjs.org,PROXY
