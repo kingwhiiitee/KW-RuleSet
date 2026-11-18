@@ -15,21 +15,13 @@ DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.com.cdn.cloudflare.net
 
 # Telemetry, error reporting & feature flags.
-# Operational telemetry moved to Datadog (http-intake.logs.us5.datadoghq.com).
+# Datadog/Sentry/Statsig/Intercom are shared vendors also listed in
+# ChatGPT.list, which loads first (美国); not duplicated here.
 # statsig.anthropic.com no longer resolves (NXDOMAIN); the SDK hits
 # api.statsig.com / *.statsigapi.net directly.
-DOMAIN-SUFFIX,datadoghq.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,statsig.com
-DOMAIN-SUFFIX,statsigapi.net
 DOMAIN,cdn.growthbook.io
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,cdn.usefathom.com
-
-# In-app support widget.
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,intercomassets.com
 
 # Anthropic's own allocation (AS399358, ARIN AP-2440).
 # api.anthropic.com -> 160.79.104.10 / 2607:6bc0::10

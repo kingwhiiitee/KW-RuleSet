@@ -34,12 +34,9 @@ DOMAIN-SUFFIX,joinhoney.com
 DOMAIN-SUFFIX,paidy.net
 
 # Telemetry, surveys and checkout fraud checks.
-# data.adobedc.net observed on paypal.com (Adobe AEP Web SDK);
+# Adobe domains (omtrdc/demdex/adobedtm/adobedc) are shared vendors held
+# in CapitalOne.list; not duplicated here.
 # mpsnare.iesnare.com is the iovation device-fingerprint beacon.
-DOMAIN-SUFFIX,omtrdc.net
-DOMAIN-SUFFIX,demdex.net
-DOMAIN-SUFFIX,adobedtm.com
-DOMAIN-SUFFIX,adobedc.net
 DOMAIN-SUFFIX,iesnare.com
 DOMAIN-SUFFIX,qualtrics.com
 
