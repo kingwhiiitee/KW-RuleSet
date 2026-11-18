@@ -1,3 +1,5 @@
+# Claude (Anthropic) — verified 2026-11-18
+# Official network docs: https://code.claude.com/docs/en/network-config
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
@@ -5,12 +7,33 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN,claude.com
 DOMAIN,claude.ai
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic-com.ghost.io
 DOMAIN,anthropic.com.cdn.cloudflare.net
+
+# Telemetry, error reporting & feature flags.
+# Operational telemetry moved to Datadog (http-intake.logs.us5.datadoghq.com).
+# statsig.anthropic.com no longer resolves (NXDOMAIN); the SDK hits
+# api.statsig.com / *.statsigapi.net directly.
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,cdn.growthbook.io
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,cdn.usefathom.com
+
+# In-app support widget.
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,intercomassets.com
+
+# Anthropic's own allocation (AS399358, ARIN AP-2440).
+# api.anthropic.com -> 160.79.104.10 / 2607:6bc0::10
+# Datadog/Statsig endpoints ride shared CDN space, so no IPs for them.
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+IP-CIDR6,2607:6bc0:11::/48,no-resolve
