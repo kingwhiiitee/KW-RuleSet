@@ -1,0 +1,56 @@
+# ChatGPT / OpenAI — verified 2026-11-18
+# Official network docs: https://help.openai.com/en/articles/9247898
+# Superset of blackmatrix7's OpenAI.list, minus its stale entries.
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+
+# Sign-in and anti-bot. Arkose + Cloudflare Turnstile are required,
+# otherwise auth.openai.com challenges never complete.
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,identrust.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN,openai-api.arkoselabs.com
+
+# Advanced Voice Mode SFU.
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+
+# Billing.
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+
+# Telemetry, error reporting & feature flags.
+# Datadog RUM: *.browser-intake-datadoghq.com, logs: http-intake.logs.datadoghq.com.
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN,cdn.segment.com
+DOMAIN,static.cloudflareinsights.com
+
+# Support widget and help-center search.
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,intercomassets.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,observeit.net
+
+# No IP rules on purpose: every OpenAI edge host sits behind Cloudflare
+# shared space, and the upstream IP-ASN,20473 covered all of Vultr.
