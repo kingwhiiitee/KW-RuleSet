@@ -1,0 +1,17 @@
+# Antigravity (Google agentic IDE) — verified 2026-11-18
+# Official site: https://antigravity.google
+# googleapis.com / web.app / google.dev are also covered by Google.list;
+# antigravity.google (.google TLD host) is the gap this list fixes.
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,antigravity.google.com
+DOMAIN-SUFFIX,antigravity.google.dev
+DOMAIN-SUFFIX,antigravity-auth.web.app
+
+# Backend Cloud Code / PA endpoints observed for the Antigravity agent.
+DOMAIN,antigravity-pa.googleapis.com
+DOMAIN,cloudcode-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+
+# Auto-updater (Cloud Run) — run.app is shared GCP infra, keep it exact.
+DOMAIN,antigravity-ide-auto-updater-974169037036.us-central1.run.app
