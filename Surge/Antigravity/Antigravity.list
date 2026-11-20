@@ -7,6 +7,11 @@ DOMAIN-SUFFIX,antigravity.google.com
 DOMAIN-SUFFIX,antigravity.google.dev
 DOMAIN-SUFFIX,antigravity-auth.web.app
 
+# Unleash init API (.goog TLD) + Google Cloud auth host — both were
+# uncovered and fell through to FINAL; eligibility may be decided here.
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,cloud.google
+
 # Backend Cloud Code / PA endpoints observed for the Antigravity agent.
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,cloudcode-pa.googleapis.com
